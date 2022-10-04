@@ -4,9 +4,8 @@
   border: 1px solid #545454;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 320px) {
   .header__divider {
-    width: 142px;
-    height: 42px;
+    margin: 32px 0 0;
   }
 }
