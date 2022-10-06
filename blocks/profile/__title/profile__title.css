@@ -9,3 +9,18 @@
   margin: 0;
   height: 39px;
 }
+
+@media screen and (max-width: 1024px) {
+  .profile__title  {
+    padding: 0 18px 16px 42px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .profile__title {
+    line-height: 1.18;
+    font-size: 27px;
+    height: 26px;
+    padding: 0 10px 14px 28px;
+  }
+}

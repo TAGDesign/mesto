@@ -7,3 +7,17 @@
   border: 0;
   height: 61%;
 }
+
+@media screen and (max-width: 1024px) {
+  .profile__info {
+    padding: 26px 0 36px;
+    width: 372px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .profile__info {
+    width: 100%;
+    justify-content: center;
+  }
+}
