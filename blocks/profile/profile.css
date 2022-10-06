@@ -1,6 +1,6 @@
 .profile {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   width: 68.75%;
   margin: 0 auto;
   padding: 45px 0 0;
