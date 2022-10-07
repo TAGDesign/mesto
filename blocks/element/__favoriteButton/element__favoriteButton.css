@@ -1,0 +1,11 @@
+.element__favoriteButton {
+  background-image: url(../../../images/Favorite-Button.svg);
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 22px;
+  max-height: 79px;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
