@@ -12,5 +12,12 @@
 @media screen and (max-width: 1024px) {
   .elements {
     grid: repeat(6, 1fr)/repeat(1, 1fr);
+    width: 68.75%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+  .elements {
+    width: 88.125%;
   }
 }

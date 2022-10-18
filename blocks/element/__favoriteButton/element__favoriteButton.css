@@ -2,9 +2,10 @@
   background-image: url(../../../images/Favorite-Button.svg);
   background-repeat: no-repeat;
   background-color: white;
-  width: 22px;
+  width: 12%;
   max-height: 79px;
-  background-position: center;
+  background-position: right;
+  border-radius: 10px;
   margin: 0;
   padding: 0;
   border: 0;

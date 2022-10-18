@@ -1,5 +1,9 @@
 .element {
   background-color: white;
-  max-height: 361px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
