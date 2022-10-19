@@ -23,3 +23,6 @@
 @import url(../blocks/element/__favoriteButton/element__favoriteButton.css);
 @import url(../blocks/element/__line/element__line.css);
 
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__copyright/copyright.css);
+
