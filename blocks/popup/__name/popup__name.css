@@ -2,10 +2,17 @@
   width: 83%;
   height: 27px;
   margin: 54px auto 30px;
+  padding: 0;
   border: 0;
   border-bottom: 1px solid #CCCCCC;
   line-height: 1.2;
   font-size: 14px;
   font-weight: 400;
   font-family: "Inter", "Arial", sans-serif;
+}
+
+@media screen and (max-width: 320px) {
+  .popup__name {
+    margin-top: 75px;
+  }
 }
