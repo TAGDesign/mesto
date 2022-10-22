@@ -10,3 +10,7 @@
   font-weight: 400;
   font-family: "Inter", "Arial", sans-serif;
 }
+
+.popup__job:focus {
+  outline-color: #74A0FF;
+}

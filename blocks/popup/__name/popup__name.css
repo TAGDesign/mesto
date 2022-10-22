@@ -11,8 +11,13 @@
   font-family: "Inter", "Arial", sans-serif;
 }
 
+.popup__name:focus {
+  outline-color: #74A0FF;
+}
+
 @media screen and (max-width: 320px) {
   .popup__name {
     margin-top: 75px;
   }
 }
+
