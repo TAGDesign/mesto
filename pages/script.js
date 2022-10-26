@@ -2,7 +2,7 @@
 const content = document.querySelector('.content');
 
 // Врапперы
-const modalWindow = content.querySelector('.popup');
+const modalWindow = document.querySelector('.popup');
 const form = modalWindow.querySelector('.popup__container');
 
 //Кнопки и прочие дом узлы
