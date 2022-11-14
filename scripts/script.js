@@ -1,19 +1,10 @@
-// Темплейты
 const content = document.querySelector('.content');
-
-// Врапперы
 const modalWindow = document.querySelector('.popup');
 const form = modalWindow.querySelector('.popup__container');
-
-//Кнопки и прочие дом узлы
 const editButton = content.querySelector('.profile__editButton');
 const closeButton = form.querySelector('.popup__closeButton');
-
-//DOM узлы профиля
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
-
-// Данные форм и элементы форм
 const titleInputValue = form.querySelector('.popup__name');
 const descriptionInputValue = form.querySelector('.popup__job');
 

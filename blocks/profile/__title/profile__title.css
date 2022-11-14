@@ -7,11 +7,16 @@
   border: 0;
   margin: 0;
   height: 39px;
+  width: 56%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 @media screen and (max-width: 1024px) {
   .profile__title  {
     padding: 0 18px 16px 42px;
+    width: 52%;
   }
 }
 
@@ -21,5 +26,12 @@
     font-size: 27px;
     height: 26px;
     padding: 0 10px 14px 28px;
+    width: 39%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .profile__title {
+    width: 66%;
   }
 }
