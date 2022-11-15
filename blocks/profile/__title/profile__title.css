@@ -16,7 +16,7 @@
 @media screen and (max-width: 1024px) {
   .profile__title  {
     padding: 0 18px 16px 42px;
-    width: 52%;
+    width: 41%;
   }
 }
 
@@ -26,12 +26,12 @@
     font-size: 27px;
     height: 26px;
     padding: 0 10px 14px 28px;
-    width: 39%;
+    width: 50%;
   }
 }
 
 @media screen and (max-width: 320px) {
   .profile__title {
-    width: 66%;
+    width: 58%;
   }
 }
