@@ -9,7 +9,7 @@ const titleInputValue = form.querySelector('.popup__name');
 const descriptionInputValue = form.querySelector('.popup__job');
 
 function openModalWindow() {
-  modalWindow.classList.remove('popup__opened');
+  modalWindow.classList.remove('popup_is-open');
   titleInputValue.value = profileTitle.textContent;
   descriptionInputValue.value = profileDescription.textContent;
 }
@@ -18,7 +18,7 @@ form.addEventListener('submit', (evt) => {
   evt.preventDefault();
   profileTitle.textContent = titleInputValue.value;
   profileDescription.textContent = descriptionInputValue.value;
-  modalWindow.classList.add('popup__opened');
+  modalWindow.classList.add('popup_is-open');
   })
 
 editButton.addEventListener('click', openModalWindow);
