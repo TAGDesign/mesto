@@ -22,4 +22,4 @@ https://github.com/TAGDesign/mesto
 Доработать добавление, редактирование и удаление карточек
 
 ## Понравился проект?
-Свяжитесь со мной в telegram @designta
+Свяжитесь со мной в telegram [@designta](https://t.me/designta)
