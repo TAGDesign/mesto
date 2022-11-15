@@ -3,17 +3,17 @@
     font-style: normal;
     font-weight: 400;
     src:
-      url('Inter-Regular.woff2') format('woff2'),
-      url('Inter-Regular.woff?v=3.15') format('woff');
+      url('inter-v12-cyrillic-ext_cyrillic-regular.woff2') format('woff2'),
+      url('inter-v12-cyrillic-ext_cyrillic-regular.woff') format('woff');
   }
 
   @font-face {
     font-family: Inter;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 500;
     src:
-      url('Inter-Bold.woff2?v=3.15') format('woff2'),
-      url('Inter-Bold.woff?v=3.15') format('woff');
+      url('inter-v12-cyrillic-ext_cyrillic-500.woff2') format('woff2'),
+      url('inter-v12-cyrillic-ext_cyrillic-500.woff') format('woff');
   }
 
   @font-face {
@@ -21,6 +21,6 @@
     font-style: normal;
     font-weight: 900;
     src:
-      url('Inter-Black.woff2?v=3.15') format('woff2'),
-      url('Inter-Black.woff?v=3.15') format('woff');
+      url('inter-v12-cyrillic-ext_cyrillic-900.woff2') format('woff2'),
+      url('inter-v12-cyrillic-ext_cyrillic-900.woff') format('woff');
   }
