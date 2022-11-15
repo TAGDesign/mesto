@@ -1,12 +1,11 @@
 .profile__title {
-  line-height: 1.14;
+  line-height: 0.93;
   font-size: 42px;
   font-weight: 500;
   font-family: "Inter", "Arial", sans-serif;
   padding: 0 18px 16px 0;
   border: 0;
   margin: 0;
-  height: 39px;
   width: 56%;
   text-overflow: ellipsis;
   white-space: nowrap;
