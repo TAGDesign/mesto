@@ -26,14 +26,16 @@ function closeModalWindow() {
   modalWindow.classList.remove('popup_is-open');
 }
 
+function openEditForm() {
+  openModalWindow();
+  formImport();
+}
+
 form.addEventListener('submit', (evt) => {
   evt.preventDefault();
   formExport();
   closeModalWindow()
 })
 
-popupEditButton.addEventListener('click', function (event) {
-  formImport();
-  openModalWindow();
-});
+popupEditButton.addEventListener('click', openEditForm);
 popupCloseButton.addEventListener('click', closeModalWindow);
