@@ -27,8 +27,8 @@ function closeModalWindow() {
 }
 
 function openEditForm() {
-  openModalWindow();
   formImport();
+  openModalWindow();
 }
 
 form.addEventListener('submit', (evt) => {
