@@ -19,11 +19,11 @@
         <img class="profile__avatar" src="./images/Avatar.png" alt="аватар автора">
         <div class="profile__info">
           <h1 class="profile__title">Жак-Ив Кусто</h1>
-          <button class="profile__editButton"></button>
+          <button class="profile__edit-button"></button>
           <h3 class="profile__subtitle">Исследователь океана</h3>
         </div>
       </div>
-      <button class="profile__addButton"></button>
+      <button class="profile__add-button"></button>
     </section>
 
     <section class="elements">
@@ -31,7 +31,7 @@
         <img class="element__image" src="./images/Karachaevsk.png" alt="руины каменного храма на фоте леса">
         <div class="element__line">
           <h2 class="element__title">Карачаевск</h2>
-          <button class="element__favoriteButton"></button>
+          <button class="element__favorite-button"></button>
         </div>
       </article>
 
@@ -39,7 +39,7 @@
         <img class="element__image" src="./images/Elbrus.png" alt="гора в далеке на фоне оранжевого заката">
         <div class="element__line">
           <h2 class="element__title">Гора Эльбрус</h2>
-          <button class="element__favoriteButton"></button>
+          <button class="element__favorite-button"></button>
         </div>
       </article>
 
@@ -47,7 +47,7 @@
         <img class="element__image" src="./images/Dombai.png" alt="ущелье горы и лес на переднем плане">
         <div class="element__line">
           <h2 class="element__title">Домбай</h2>
-          <button class="element__favoriteButton"></button>
+          <button class="element__favorite-button"></button>
         </div>
       </article>
 
@@ -55,7 +55,7 @@
         <img class="element__image" src="./images/Elbrus.png" alt="гора в далеке на фоне оранжевого заката">
         <div class="element__line">
           <h2 class="element__title">Гора Эльбрус</h2>
-          <button class="element__favoriteButton"></button>
+          <button class="element__favorite-button"></button>
         </div>
       </article>
 
@@ -63,7 +63,7 @@
         <img class="element__image" src="./images/Dombai.png" alt="ущелье горы и лес на переднем плане">
         <div class="element__line">
           <h2 class="element__title">Домбай</h2>
-          <button class="element__favoriteButton"></button>
+          <button class="element__favorite-button"></button>
         </div>
       </article>
 
@@ -71,7 +71,7 @@
         <img class="element__image" src="./images/Karachaevsk.png" alt="руины каменного храма на фоте леса">
         <div class="element__line">
           <h2 class="element__title">Карачаево-Ч...</h2>
-          <button class="element__favoriteButton"></button>
+          <button class="element__favorite-button"></button>
         </div>
       </article>
     </section>
@@ -81,14 +81,16 @@
     <p class="footer__copyright">© 2020 Mesto Russia</p>
   </footer>
 
-  <div class="popup popup_is-open">
-    <form class="popup__container">
-      <button class="popup__closeButton"></button>
-      <h2 class="popup__title">Редактировать профиль</h2>
-      <input class="popup__name" type="text" name="name" placeholder="Имя">
-      <input class="popup__job" type="text" name="name" placeholder="Интересы">
-      <button class="popup__submitButton" type="submit">Сохранить</button>
-    </form>
+  <div class="popup">
+    <div class="popup__container">
+      <form class="popup__form" name="editForm">
+        <button class="popup__close-button"></button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <input class="popup__input popup__input_content_name" type="text" name="name" placeholder="Имя">
+        <input class="popup__input popup__input_content_job" type="text" name="name" placeholder="Интересы">
+        <button class="popup__submit-button" type="submit">Сохранить</button>
+      </form>
+    </div>
   </div>
   <script src="./scripts/script.js" type="module"></script>
 </body>

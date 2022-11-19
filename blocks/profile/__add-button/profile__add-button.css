@@ -1,4 +1,4 @@
-.profile__addButton {
+.profile__add-button {
   background-image: url(../../../images/Add-Button.svg);
   background-color: black;
   background-repeat: no-repeat;
@@ -9,14 +9,14 @@
   border: 0;
 }
 
-.profile__addButton:hover {
+.profile__add-button:hover {
   opacity: 60%;
   cursor: pointer;
 }
 
 
 @media screen and (max-width: 1024px) {
-  .profile__addButton  {
+  .profile__add-button  {
     width: 100%;
     background-image: url(../../../images/Plus.svg);
     background-position: center;
@@ -26,13 +26,13 @@
 }
 
 @media screen and (max-width: 540px) {
-  .profile__addButton  {
+  .profile__add-button  {
     width: 68.75%;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .profile__addButton  {
+  .profile__add-button  {
     width: 88.125%;
   }
 }

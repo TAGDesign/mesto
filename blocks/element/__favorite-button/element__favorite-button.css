@@ -1,4 +1,4 @@
-.element__favoriteButton {
+.element__favorite-button {
   background-image: url(../../../images/Favorite-Button.svg);
   background-repeat: no-repeat;
   background-color: white;
@@ -11,12 +11,12 @@
   border: 0;
 }
 
-.element__favoriteButton:hover {
+.element__favorite-button:hover {
   opacity: 50%;
   cursor: pointer;
 }
 
-.element__favoriteButton:active {
+.element__favorite-button:active {
   background-image: url(../../../images/Favorite_Button_active.svg);
   opacity: 100%;
 }
