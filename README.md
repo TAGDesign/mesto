@@ -2,7 +2,7 @@
 Страница профиля из 4 блоков, рассказывающая о местах, которые посетил автор
 
 ## GitHub Pages
-https://github.com/TAGDesign/mesto
+https://tagdesign.github.io/mesto/
 
 ## Используемые технологии
 1. Сайт разрабатывался по [макету из Фигмы](https://www.figma.com/file/2cn9N9jSkmxD84oJik7xL7/JavaScript.-Sprint-4?node-id=0%3A1&t=5xPfiqlFGJ906Wu2-1)
