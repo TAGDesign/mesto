@@ -1,24 +1,39 @@
 const content = document.querySelector('.content');
 const modalWindow = document.querySelector('.popup');
 const form = modalWindow.querySelector('.popup__container');
-const closeButton = form.querySelector('.popup__closeButton');
-const editButton = content.querySelector('.profile__editButton');
+const popupCloseButton = form.querySelector('.popup__close-button');
+const popupEditButton = content.querySelector('.profile__edit-button');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
-const titleInputValue = form.querySelector('.popup__name');
-const descriptionInputValue = form.querySelector('.popup__job');
+const titleInputValue = form.querySelector('.popup__input_content_name');
+const descriptionInputValue = form.querySelector('.popup__input_content_job');
 
-function openModalWindow() {
-  modalWindow.classList.remove('popup_is-open');
+function formImport() {
   titleInputValue.value = profileTitle.textContent;
   descriptionInputValue.value = profileDescription.textContent;
 }
 
-form.addEventListener('submit', (evt) => {
-  evt.preventDefault();
+function formExport() {
   profileTitle.textContent = titleInputValue.value;
   profileDescription.textContent = descriptionInputValue.value;
-  modalWindow.classList.add('popup_is-open');
-  })
+}
 
-editButton.addEventListener('click', openModalWindow);
+function openModalWindow() {
+  modalWindow.classList.add('popup_is-open');
+}
+
+function closeModalWindow() {
+  modalWindow.classList.remove('popup_is-open');
+}
+
+form.addEventListener('submit', (evt) => {
+  evt.preventDefault();
+  formExport();
+  closeModalWindow()
+})
+
+popupEditButton.addEventListener('click', function (event) {
+  formImport();
+  openModalWindow();
+});
+popupCloseButton.addEventListener('click', closeModalWindow);
