@@ -1,12 +1,13 @@
 .profile__add-button {
-  background: transparent;
   background-image: url(../../../images/Add-Button.svg);
   background-repeat: no-repeat;
-  width: 150px;
-  min-height: 50px;
+  background-color: transparent;
+  background-position: center;
+  border: 2px solid white;
+  width: 17%;
+  max-height: 50px;
   margin: 35px 0 0;
   padding: 0;
-  border: 0;
 }
 
 .profile__add-button:hover {
@@ -15,12 +16,13 @@
 }
 
 
-@media screen and (max-width: 1024px) {
-  .profile__add-button  {
+@media screen and (max-width: 1040px) {
+  .profile__add-button {
     width: 100%;
     background-image: url(../../../images/Plus.svg);
     background-position: center;
     border: 2px solid white;
+    min-height: 50px;
     margin: 0 auto;
   }
 }
