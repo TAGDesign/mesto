@@ -1,29 +1,15 @@
-const initialCards = [
-  {
-    name: 'Архыз',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/arkhyz.jpg'
-  },
-  {
-    name: 'Челябинская область',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/chelyabinsk-oblast.jpg'
-  },
-  {
-    name: 'Иваново',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/ivanovo.jpg'
-  },
-  {
-    name: 'Камчатка',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kamchatka.jpg'
-  },
-  {
-    name: 'Холмогорский район',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/kholmogorsky-rayon.jpg'
-  },
-  {
-    name: 'Байкал',
-    link: 'https://pictures.s3.yandex.net/frontend-developer/cards-compressed/baikal.jpg'
-  }
-];
+import {initialCards} from './data.js'
+
+const initialListCard = document.querySelector('.elements');
+const modalWindow = document.querySelector('.popup');
+const form = document.querySelector('.popup__form');
+const popupCloseButton = document.querySelector('.popup__close-button');
+const popupEditButton = document.querySelector('.profile__edit-button');
+const profileTitle = document.querySelector('.profile__title');
+const profileDescription = document.querySelector('.profile__subtitle');
+const titleInputValue = document.querySelector('.popup__input_content_name');
+const descriptionInputValue = document.querySelector('.popup__input_content_job');
+
 
 function createElement(item) {
   const template = `
@@ -42,18 +28,6 @@ function createElement(item) {
 initialCards.forEach(function(item) {
   createElement(item);
 });
-
-
-
-const initialListCard = document.querySelector('.elements');
-const modalWindow = document.querySelector('.popup');
-const form = document.querySelector('.popup__form');
-const popupCloseButton = document.querySelector('.popup__close-button');
-const popupEditButton = document.querySelector('.profile__edit-button');
-const profileTitle = document.querySelector('.profile__title');
-const profileDescription = document.querySelector('.profile__subtitle');
-const titleInputValue = document.querySelector('.popup__input_content_name');
-const descriptionInputValue = document.querySelector('.popup__input_content_job');
 
 function importFormData() {
   titleInputValue.value = profileTitle.textContent;
