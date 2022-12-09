@@ -12,21 +12,7 @@ const profileDescription = document.querySelector('.profile__subtitle');
 const titleInputValue = document.querySelector('.popup__input_content_name');
 const descriptionInputValue = document.querySelector('.popup__input_content_job');
 
-
-
 function createElement(item) {
-  //const template = `
-  //  <article class="element">
-  //    <img class="element__image" src="${item.link}" alt="${item.alt}">
-  //    <div class="element__line">
-  //      <h2 class="element__title">${item.name}</h2>
-  //      <button class="element__favorite-button" aria-label="Избранное" type="button"></button>
-  //    </div>
-  //  </article>
-  //`
-  //initialListCard.innerHTML += template;
-  //initialListCard.insertAdjacentHTML('beforeend', template);
-
   const card = cardTemplate.cloneNode(true);
   const cardTitle = card.querySelector('.element__title');
   cardTitle.textContent = item.name;
