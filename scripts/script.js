@@ -14,7 +14,7 @@ const descriptionInputValue = document.querySelector('.popup__input_content_job'
 function createElement(item) {
   const template = `
     <article class="element">
-      <img class="element__image" src="${item.link}" alt="руины каменного храма на фоте леса">
+      <img class="element__image" src="${item.link}" alt="${item.alt}">
       <div class="element__line">
         <h2 class="element__title">${item.name}</h2>
         <button class="element__favorite-button" aria-label="Избранное" type="button"></button>
@@ -22,7 +22,10 @@ function createElement(item) {
     </article>
   `
   console.log(template);
-  initialListCard.innerHTML += template;
+  //initialListCard.innerHTML += template;
+
+  initialListCard.insertAdjacentHTML('beforeend', template);
+
 };
 
 initialCards.forEach(function(item) {
