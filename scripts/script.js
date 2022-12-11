@@ -7,6 +7,9 @@ const modalWindow = document.querySelector('.popup');
 const form = document.querySelector('.popup__form');
 const popupCloseButton = document.querySelector('.popup__close-button');
 const popupEditButton = document.querySelector('.profile__edit-button');
+const popupAddButton = document.querySelector('.profile__add-button');
+const popupSubmitButton = document.querySelector('.popup__submit-button');
+const popupTitle = document.querySelector('.popup__title');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
 const titleInputValue = document.querySelector('.popup__input_content_name');
@@ -60,3 +63,16 @@ function closeEditForm(evt) {
 popupEditButton.addEventListener('click', openEditForm);
 form.addEventListener('submit', closeEditForm);
 popupCloseButton.addEventListener('click', closeModalWindow);
+
+function openAddWindow() {
+  modalWindow.classList.add('popup_is-open');
+  popupTitle.textContent = 'Новое место';
+  titleInputValue.placeholder = 'Название';
+  descriptionInputValue.placeholder = 'Ссылка на картинку';
+}
+
+popupAddButton.addEventListener('click', openAddWindow);
+
+
+
+
