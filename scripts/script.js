@@ -7,8 +7,8 @@ const modalWindow = document.querySelector('.popup');
 const form = document.querySelector('.popup__form');
 const popupCloseButton = document.querySelector('.popup__close-button');
 const popupEditButton = document.querySelector('.profile__edit-button');
-const popupAddButton = document.querySelector('.profile__add-button');
 const popupSubmitButton = document.querySelector('.popup__submit-button');
+const popupAddButton = document.querySelector('.profile__add-button');
 const popupTitle = document.querySelector('.popup__title');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
@@ -44,6 +44,7 @@ function exportFormData() {
 function openModalWindow() {
   modalWindow.classList.add('popup_is-open');
   popupTitle.textContent = 'Редактировать профиль';
+  popupSubmitButton.textContent = 'Сохранить';
 }
 
 function closeModalWindow() {
@@ -71,8 +72,21 @@ function openAddWindow() {
   popupSubmitButton.textContent = 'Создать';
 }
 
+function closeAddForm(evt) {
+  evt.preventDefault();
+  closeModalWindow();
+}
+
 popupEditButton.addEventListener('click', openEditForm);
 form.addEventListener('submit', closeEditForm);
+popupSubmitButton.addEventListener('click', closeAddForm);
+
+// if (popupSubmitButton.value == 'Создать') {
+//   form.addEventListener('submit', closeAddForm);
+// } else {
+//   form.addEventListener('submit', closeEditForm);
+// };
+
 popupCloseButton.addEventListener('click', closeModalWindow);
 popupAddButton.addEventListener('click', openAddWindow);
 
