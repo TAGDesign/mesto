@@ -43,6 +43,7 @@ function exportFormData() {
 
 function openModalWindow() {
   modalWindow.classList.add('popup_is-open');
+  popupTitle.textContent = 'Редактировать профиль';
 }
 
 function closeModalWindow() {
@@ -63,15 +64,17 @@ function closeEditForm(evt) {
 function openAddWindow() {
   modalWindow.classList.add('popup_is-open');
   popupTitle.textContent = 'Новое место';
+  titleInputValue.value = '';
   titleInputValue.placeholder = 'Название';
+  descriptionInputValue.value = '';
   descriptionInputValue.placeholder = 'Ссылка на картинку';
   popupSubmitButton.textContent = 'Создать';
 }
 
-popupAddButton.addEventListener('click', openAddWindow);
 popupEditButton.addEventListener('click', openEditForm);
 form.addEventListener('submit', closeEditForm);
 popupCloseButton.addEventListener('click', closeModalWindow);
+popupAddButton.addEventListener('click', openAddWindow);
 
 
 
