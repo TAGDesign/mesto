@@ -7,8 +7,8 @@ const modalWindow = document.querySelector('.popup');
 const form = document.querySelector('.popup__form');
 const popupCloseButton = document.querySelector('.popup__close-button');
 const popupEditButton = document.querySelector('.profile__edit-button');
-const popupSubmitButton = document.querySelector('.popup__submit-button');
 const popupAddButton = document.querySelector('.profile__add-button');
+const popupSubmitButton = document.querySelector('.popup__submit-button');
 const popupTitle = document.querySelector('.popup__title');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
@@ -78,14 +78,12 @@ function closeAddForm(evt) {
 }
 
 popupEditButton.addEventListener('click', openEditForm);
-form.addEventListener('submit', closeEditForm);
 
-// popupSubmitButton.addEventListener('click', closeAddForm);
-// if (popupSubmitButton.value == 'Создать') {
-//   form.addEventListener('submit', closeAddForm);
-// } else {
-//   form.addEventListener('submit', closeEditForm);
-// };
+if (popupSubmitButton.textContent == 'Сохранить') {
+  form.addEventListener('submit', closeAddForm);
+} else {
+  form.addEventListener('submit', closeEditForm);
+};
 
 popupCloseButton.addEventListener('click', closeModalWindow);
 popupAddButton.addEventListener('click', openAddWindow);
