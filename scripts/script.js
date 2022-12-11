@@ -60,18 +60,18 @@ function closeEditForm(evt) {
   closeModalWindow();
 }
 
-popupEditButton.addEventListener('click', openEditForm);
-form.addEventListener('submit', closeEditForm);
-popupCloseButton.addEventListener('click', closeModalWindow);
-
 function openAddWindow() {
   modalWindow.classList.add('popup_is-open');
   popupTitle.textContent = 'Новое место';
   titleInputValue.placeholder = 'Название';
   descriptionInputValue.placeholder = 'Ссылка на картинку';
+  popupSubmitButton.textContent = 'Создать';
 }
 
 popupAddButton.addEventListener('click', openAddWindow);
+popupEditButton.addEventListener('click', openEditForm);
+form.addEventListener('submit', closeEditForm);
+popupCloseButton.addEventListener('click', closeModalWindow);
 
 
 
