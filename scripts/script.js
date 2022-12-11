@@ -79,8 +79,8 @@ function closeAddForm(evt) {
 
 popupEditButton.addEventListener('click', openEditForm);
 form.addEventListener('submit', closeEditForm);
-popupSubmitButton.addEventListener('click', closeAddForm);
 
+// popupSubmitButton.addEventListener('click', closeAddForm);
 // if (popupSubmitButton.value == 'Создать') {
 //   form.addEventListener('submit', closeAddForm);
 // } else {
