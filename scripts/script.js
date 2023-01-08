@@ -4,17 +4,23 @@ const initialListCard = document.querySelector('.elements');
 const cardTemplate =
     document.querySelector('#cardList-template').content.querySelector('.element');
 const modalWindow = document.querySelector('.popup');
-const form = document.querySelector('.popup__form');
 const popupCloseButton = document.querySelector('.popup__close-button');
 const popupEditButton = document.querySelector('.profile__edit-button');
-const popupAddButton = document.querySelector('.profile__add-button');
 const popupSubmitButton = document.querySelector('.popup__submit-button');
-const popupTitle = document.querySelector('.popup__title');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
 const titleInputValue = document.querySelector('.popup__input_content_name');
 const descriptionInputValue = document.querySelector('.popup__input_content_job');
 
+const modalAddWindow = document.querySelector('.popup-add');
+const popupAddCloseButton = document.querySelector('.popup-add__close-button');
+const popupAddButton = document.querySelector('.profile__add-button');
+const popupAddSubmitButton = document.querySelector('.popup-add__submit-button');
+const cardTitleInputValue = document.querySelector('.popup-add__input_content_name');
+const cardLinkInputValue = document.querySelector('.popup-add__input_content_job');
+
+
+//cards
 function createElement(item) {
   const card = cardTemplate.cloneNode(true);
   const cardTitle = card.querySelector('.element__title');
@@ -31,6 +37,7 @@ initialCards.forEach(function(item) {
   initialListCard.append(element);
 });
 
+//editPopup
 function importFormData() {
   titleInputValue.value = profileTitle.textContent;
   descriptionInputValue.value = profileDescription.textContent;
@@ -43,8 +50,6 @@ function exportFormData() {
 
 function openModalWindow() {
   modalWindow.classList.add('popup_is-open');
-  popupTitle.textContent = 'Редактировать профиль';
-  popupSubmitButton.textContent = 'Сохранить';
 }
 
 function closeModalWindow() {
@@ -62,32 +67,21 @@ function closeEditForm(evt) {
   closeModalWindow();
 }
 
-function openAddWindow() {
-  modalWindow.classList.add('popup_is-open');
-  popupTitle.textContent = 'Новое место';
-  titleInputValue.value = '';
-  titleInputValue.placeholder = 'Название';
-  descriptionInputValue.value = '';
-  descriptionInputValue.placeholder = 'Ссылка на картинку';
-  popupSubmitButton.textContent = 'Создать';
-}
-
-function closeAddForm(evt) {
-  evt.preventDefault();
-  closeModalWindow();
-}
-
 popupEditButton.addEventListener('click', openEditForm);
-
-if (popupSubmitButton.textContent == 'Сохранить') {
-  form.addEventListener('submit', closeAddForm);
-} else {
-  form.addEventListener('submit', closeEditForm);
-};
-
+popupSubmitButton.addEventListener('click', closeEditForm);
 popupCloseButton.addEventListener('click', closeModalWindow);
-popupAddButton.addEventListener('click', openAddWindow);
 
+//addPopup
+function openAddWindow() {
+  modalAddWindow.classList.add('popup-add_is-open');
+}
+
+function closeAddWindow() {
+  modalAddWindow.classList.remove('popup-add_is-open');
+}
+
+popupAddButton.addEventListener('click', openAddWindow);
+popupAddCloseButton.addEventListener('click', closeAddWindow);
 
 
 

@@ -1,0 +1,10 @@
+.popup-add {
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+  min-height:100%;
+  background-color: rgba(0,0,0,0.5);
+  top:0px;
+}
