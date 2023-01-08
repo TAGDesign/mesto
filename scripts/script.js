@@ -16,8 +16,8 @@ const modalAddWindow = document.querySelector('.popup-add');
 const popupAddCloseButton = document.querySelector('.popup-add__close-button');
 const popupAddButton = document.querySelector('.profile__add-button');
 const popupAddSubmitButton = document.querySelector('.popup-add__submit-button');
-const cardTitleInputValue = document.querySelector('.popup-add__input_content_name');
-const cardLinkInputValue = document.querySelector('.popup-add__input_content_job');
+const cardTitleInputValue = document.querySelector('.popup-add__input_card_name');
+const cardLinkInputValue = document.querySelector('.popup-add__input_card_link');
 
 
 //cards
@@ -74,14 +74,32 @@ popupCloseButton.addEventListener('click', closeModalWindow);
 //addPopup
 function openAddWindow() {
   modalAddWindow.classList.add('popup-add_is-open');
+  cardTitleInputValue.value = "";
+  cardLinkInputValue.value = "";
 }
 
 function closeAddWindow() {
   modalAddWindow.classList.remove('popup-add_is-open');
 }
 
+function handleAddFormSubmit(evt) {
+  evt.preventDefault();
+
+  const card = {
+    name: cardTitleInputValue.value,
+    link: cardLinkInputValue.value
+  }
+
+  const element = createElement(card);
+  initialListCard.append(element);
+
+  closeAddWindow();
+
+}
+
 popupAddButton.addEventListener('click', openAddWindow);
 popupAddCloseButton.addEventListener('click', closeAddWindow);
+popupAddSubmitButton.addEventListener('click', handleAddFormSubmit);
 
 
 
