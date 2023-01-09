@@ -29,8 +29,15 @@ function createElement(item) {
   cardImage.src = item.link;
   const cardAlt = card.querySelector('.element__image');
   cardImage.alt = item.alt;
+  const cardLikeButton = card.querySelector('.element__favorite-button');
+  cardLikeButton.addEventListener('click', likeButtonClick);
+
   return card;
 };
+
+function likeButtonClick(evt) {
+  evt.target.classList.toggle('element__favorite-button_is-active');
+}
 
 initialCards.forEach(function(item) {
   const element = createElement(item);
@@ -100,6 +107,5 @@ function handleAddFormSubmit(evt) {
 popupAddButton.addEventListener('click', openAddWindow);
 popupAddCloseButton.addEventListener('click', closeAddWindow);
 popupAddSubmitButton.addEventListener('click', handleAddFormSubmit);
-
 
 

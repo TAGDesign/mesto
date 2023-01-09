@@ -1,0 +1,8 @@
+.element__favorite-button_is-active {
+  background: transparent url(../../../../images/Favorite_Button_active.svg) no-repeat;
+  background-position: right;
+}
+
+.element__favorite-button_is-active:hover {
+  opacity: 100%;
+}
