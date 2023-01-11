@@ -31,6 +31,8 @@ function createElement(item) {
   cardImage.alt = item.alt;
   const cardLikeButton = card.querySelector('.element__favorite-button');
   cardLikeButton.addEventListener('click', likeButtonClick);
+  const cardDeleteButton = card.querySelector('.element__delete-button');
+  cardDeleteButton.addEventListener('click', deleteButtonClick);
 
   return card;
 };
@@ -38,6 +40,11 @@ function createElement(item) {
 function likeButtonClick(evt) {
   evt.target.classList.toggle('element__favorite-button_is-active');
 }
+
+function deleteButtonClick(evt) {
+  evt.target.closest('.element').remove();
+}
+
 
 initialCards.forEach(function(item) {
   const element = createElement(item);
