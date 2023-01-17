@@ -1,8 +1,8 @@
-import {initialCards} from './data.js'
+import { initialCards } from './data.js'
 
 const initialListCard = document.querySelector('.elements');
 const cardTemplate =
-    document.querySelector('#cardList-template').content.querySelector('.element');
+  document.querySelector('#cardList-template').content.querySelector('.element');
 const modalWindow = document.querySelector('.popup');
 const popupCloseButton = document.querySelector('.popup__close-button');
 const popupEditButton = document.querySelector('.profile__edit-button');
@@ -19,6 +19,11 @@ const popupAddSubmitButton = document.querySelector('.popup-add__submit-button')
 const cardTitleInputValue = document.querySelector('.popup-add__input_card_name');
 const cardLinkInputValue = document.querySelector('.popup-add__input_card_link');
 
+const modalCardWindow = document.querySelector('.popup-card');
+const popupCardCloseButton = document.querySelector('.popup-card__close-button');
+const popupCardImage = document.querySelector('.popup-card__image');
+const popupCardTitle = document.querySelector('.popup-card__title');
+
 
 //cards
 function createElement(item) {
@@ -33,6 +38,7 @@ function createElement(item) {
   cardLikeButton.addEventListener('click', likeButtonClick);
   const cardDeleteButton = card.querySelector('.element__delete-button');
   cardDeleteButton.addEventListener('click', deleteButtonClick);
+  cardImage.addEventListener('click', () => openCardWindow(item),);
 
   return card;
 };
@@ -45,8 +51,7 @@ function deleteButtonClick(evt) {
   evt.target.closest('.element').remove();
 }
 
-
-initialCards.forEach(function(item) {
+initialCards.forEach(function (item) {
   const element = createElement(item);
   initialListCard.append(element);
 });
@@ -115,4 +120,19 @@ popupAddButton.addEventListener('click', openAddWindow);
 popupAddCloseButton.addEventListener('click', closeAddWindow);
 popupAddSubmitButton.addEventListener('click', handleAddFormSubmit);
 
+
+//cardPopup
+
+function openCardWindow(item) {
+  modalCardWindow.classList.add('popup-card_is-open');
+  popupCardImage.src = item.link;
+  popupCardTitle.textContent = item.name;
+  popupCardImage.alt = item.alt;
+}
+
+function closeCardWindow() {
+  modalCardWindow.classList.remove('popup-card_is-open');
+}
+
+popupCardCloseButton.addEventListener('click', closeCardWindow);
 

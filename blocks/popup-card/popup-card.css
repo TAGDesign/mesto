@@ -1,5 +1,5 @@
 .popup-card {
-  display: flex;
+  display: none;
   flex-direction: column;
   position: fixed;
   justify-content: center;

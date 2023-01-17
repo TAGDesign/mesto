@@ -12,6 +12,10 @@
     border: 0;
 }
 
+.element__delete-button:hover {
+  cursor: pointer;
+}
+
 @media screen and (max-width: 1210px) {
   .element__delete-button {
     left: 220px;
