@@ -4,7 +4,7 @@
   background-color: transparent;
   position: relative;
   top: -41px;
-  right: -439px;
+  right: -102%;
   width: 32px;
   height: 32px;
   margin: 0 0 -32px 0;
@@ -12,51 +12,20 @@
   border: 0;
 }
 
-@media screen and (max-width: 570px) {
-  .popup-add__close-button {
-    right: -360px;
-  }
-}
-
-@media screen and (max-width: 426px) {
-  .popup-add__close-button {
-    right: -340px;
-  }
-}
-
-@media screen and (max-width: 402px) {
-  .popup-add__close-button {
-    right: -320px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .popup-add__close-button {
-    right: -300px;
-  }
-}
-
-@media screen and (max-width: 358px) {
-  .popup-add__close-button {
-    right: -283px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .popup-add__close-button {
-    right: -268px;
-  }
-}
-
-
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .popup-add__close-button {
     margin-bottom: -20px;
-    right: -261px;
+    right: -95%;
     top: -42px;
     width: 20px;
     height: 20px;
     background-size: cover;
     background-position: top;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .popup-add__close-button {
+    right: -93%;
   }
 }

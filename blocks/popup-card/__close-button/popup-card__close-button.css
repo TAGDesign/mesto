@@ -1,63 +1,37 @@
 .popup-card__close-button {
-  position: relative;
   background-image: url(../../../images/Close.svg);
   background-repeat: no-repeat;
   background-color: transparent;
-  background-position: center;
-  top: -40px;
-  right: -102%;
-  width: 32px;
-  min-height: 32px;
-  margin: 0 0 -32px 0;
+  position: relative;
+  top: -41px;
+  right: -101%;
+  width: 34px;
+  height: 34px;
+  margin: 0 0 -34px 0;
   padding: 0;
   border: 0;
 }
 
-@media screen and (max-width: 570px) {
-  .popup__close-button {
-    right: -360px;
+@media screen and (max-width: 800px) {
+  .popup-card__close-button {
+    right: -100%;
   }
 }
 
-@media screen and (max-width: 426px) {
-  .popup__close-button {
-    right: -340px;
-  }
-}
-
-@media screen and (max-width: 402px) {
-  .popup__close-button {
-    right: -320px;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .popup__close-button {
-    right: -300px;
-  }
-}
-
-@media screen and (max-width: 358px) {
-  .popup__close-button {
-    right: -283px;
-  }
-}
-
-@media screen and (max-width: 340px) {
-  .popup__close-button {
-    right: -268px;
-  }
-}
-
-
-@media screen and (max-width: 320px) {
-  .popup__close-button {
+@media screen and (max-width: 640px) {
+  .popup-card__close-button {
     margin-bottom: -20px;
-    right: -261px;
-    top: -42px;
+    right: -96%;
+    top: -32px;
     width: 20px;
     height: 20px;
     background-size: cover;
     background-position: top;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .popup-card__close-button {
+    right: -93%;
   }
 }

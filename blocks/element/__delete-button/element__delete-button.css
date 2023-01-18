@@ -4,7 +4,7 @@
     background-color: transparent;
     position: relative;
     top: 20px;
-    left: 244px;
+    left: 86%;
     width: 18px;
     height: 19px;
     margin: 0 0 -19px 0;
@@ -16,33 +16,15 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 1210px) {
-  .element__delete-button {
-    left: 220px;
-  }
-}
-
-@media screen and (max-width: 1145px) {
-  .element__delete-button {
-    left: 200px;
-  }
-}
-
-@media screen and (max-width: 1110px) {
-  .element__delete-button {
-    left: 190px;
-  }
-}
-
-@media screen and (max-width: 1070px) {
-  .element__delete-button {
-    left: 180px;
-  }
-}
-
 @media screen and (max-width: 1024px) {
   .element__delete-button {
-    left: 530px;
+    left: 92%;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .element__delete-button {
+    left: 88%;
   }
 }
 
