@@ -1,5 +1,7 @@
 .popup-add {
-  display: none;
+  display: flex;
+  opacity: 0;
+  z-index: -1;
   position: fixed;
   justify-content: center;
   align-items: center;

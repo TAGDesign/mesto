@@ -68,11 +68,13 @@ function exportFormData() {
 }
 
 function openModalWindow() {
+  modalWindow.classList.remove('popup_is-close');
   modalWindow.classList.add('popup_is-open');
 }
 
 function closeModalWindow() {
   modalWindow.classList.remove('popup_is-open');
+  modalWindow.classList.add('popup_is-close');
 }
 
 function openEditForm() {
@@ -92,6 +94,7 @@ popupCloseButton.addEventListener('click', closeModalWindow);
 
 //addPopup
 function openAddWindow() {
+  modalAddWindow.classList.remove('popup-add_is-close');
   modalAddWindow.classList.add('popup-add_is-open');
   cardTitleInputValue.value = "";
   cardLinkInputValue.value = "";
@@ -99,6 +102,7 @@ function openAddWindow() {
 
 function closeAddWindow() {
   modalAddWindow.classList.remove('popup-add_is-open');
+  modalAddWindow.classList.add('popup-add_is-close');
 }
 
 function handleAddFormSubmit(evt) {
@@ -125,6 +129,7 @@ popupAddSubmitButton.addEventListener('click', handleAddFormSubmit);
 
 function openCardWindow(item) {
   modalCardWindow.classList.add('popup-card_is-open');
+  modalCardWindow.classList.remove('popup-card_is-close');
   popupCardImage.src = item.link;
   popupCardTitle.textContent = item.name;
   popupCardImage.alt = item.alt;
@@ -132,6 +137,7 @@ function openCardWindow(item) {
 
 function closeCardWindow() {
   modalCardWindow.classList.remove('popup-card_is-open');
+  modalCardWindow.classList.add('popup-card_is-close');
 }
 
 popupCardCloseButton.addEventListener('click', closeCardWindow);

@@ -1,3 +1,5 @@
 .popup-add_is-open {
-  display: flex;
+  opacity: 1;
+  z-index: 1;
+  transition: z-index 0.001s linear 0s, opacity 0.4s linear 0.001s;
 }
