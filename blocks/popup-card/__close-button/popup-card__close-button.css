@@ -35,3 +35,8 @@
     right: -93%;
   }
 }
+
+.popup-card__close-button:hover {
+  cursor: pointer;
+  opacity: 80%;
+}

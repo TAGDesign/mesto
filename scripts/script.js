@@ -110,6 +110,7 @@ function handleAddFormSubmit(evt) {
 
   const card = {
     name: cardTitleInputValue.value,
+    alt: cardTitleInputValue.value,
     link: cardLinkInputValue.value
   }
 
