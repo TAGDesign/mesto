@@ -110,7 +110,7 @@ function handleAddFormSubmit(evt) {
   }
 
   const element = createElement(card);
-  initialListCard.append(element);
+  initialListCard.prepend(element);
 
   closeAddWindow();
 
