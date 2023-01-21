@@ -6,9 +6,10 @@
   flex-shrink: 0;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 540px) {
   .header {
     min-height: 83px;
     width: 100%;
+    padding-top: 28px;
   }
 }
