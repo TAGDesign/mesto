@@ -3,8 +3,5 @@
   flex-direction: column;
   max-height: 562px;
   width: 88%;
-  padding: 0;
-  margin: 0;
-  border: 0;
-  border-radius: 10px;
+  background-color: transparent;
 }

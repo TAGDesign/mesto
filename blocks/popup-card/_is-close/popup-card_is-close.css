@@ -1,5 +1,0 @@
-.popup-card_is-close {
-  opacity: 0;
-  z-index: -1;
-  transition: opacity 0.4s linear 0.001s, z-index 0.001s linear 0.4s;
-}
