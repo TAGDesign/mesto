@@ -19,8 +19,8 @@ const cardPopup = document.querySelector('.popup-add');
 const cardPopupCloseButton = document.querySelector('.popup-add__close-button');
 const cardPopupButton = document.querySelector('.profile__add-button');
 const cardPopupSubmitButton = document.querySelector('.popup-add__submit-button');
-const cardPopupTitleInputValue = document.querySelector('.popup-add__input_card_name');
-const cardPopupLinkInputValue = document.querySelector('.popup-add__input_card_link');
+const cardPopupTitleInputValue = document.querySelector('.popup-add__input_add_name');
+const cardPopupLinkInputValue = document.querySelector('.popup-add__input_add_link');
 
 const imagePopup = document.querySelector('.popup-card');
 const imagePopupCardCloseButton = document.querySelector('.popup-card__close-button');
