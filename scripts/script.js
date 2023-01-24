@@ -12,8 +12,8 @@ const profilePopupEditButton = document.querySelector('.profile__edit-button');
 const profilePopupSubmitButton = document.querySelector('.popup__submit-button');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
-const profileTitleInputValue = document.querySelector('.popup__input_content_name');
-const profileDescriptionInputValue = document.querySelector('.popup__input_content_job');
+const profileTitleInputValue = document.querySelector('.popup__input_profile_name');
+const profileDescriptionInputValue = document.querySelector('.popup__input_profile_job');
 
 const cardPopup = document.querySelector('.popup-add');
 const cardPopupCloseButton = document.querySelector('.popup-add__close-button');
