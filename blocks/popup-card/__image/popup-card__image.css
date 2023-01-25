@@ -1,6 +1,6 @@
 .popup-card__image {
   object-fit: cover;
-  max-height: 540px;
+  max-height: 75vh;
   padding: 0;
   margin: 0;
   border: 0;

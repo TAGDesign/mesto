@@ -4,21 +4,19 @@ const initialListCard = document.querySelector('.elements');
 const cardTemplate =
   document.querySelector('#cardList-template').content.querySelector('.element');
 
-const popup = document.querySelector('.popup');
-
 const profilePopup = document.querySelector('.popup-profile');
-const profilePopupCloseButton = document.querySelector('.popup__close-button');
+const profileForm = document.querySelector('.popup-profile__form');
+const buttonCloseList = document.querySelectorAll('.popup__close-button');
 const profilePopupEditButton = document.querySelector('.profile__edit-button');
-const profilePopupSubmitButton = document.querySelector('.popup__submit-button');
 const profileTitle = document.querySelector('.profile__title');
 const profileDescription = document.querySelector('.profile__subtitle');
 const profileTitleInputValue = document.querySelector('.popup__input_profile_name');
 const profileDescriptionInputValue = document.querySelector('.popup__input_profile_job');
 
 const cardPopup = document.querySelector('.popup-add');
+const cardForm = document.querySelector('.popup-add__form');
 const cardPopupCloseButton = document.querySelector('.popup-add__close-button');
 const cardPopupButton = document.querySelector('.profile__add-button');
-const cardPopupSubmitButton = document.querySelector('.popup-add__submit-button');
 const cardPopupTitleInputValue = document.querySelector('.popup__input_add_name');
 const cardPopupLinkInputValue = document.querySelector('.popup__input_add_link');
 
@@ -34,6 +32,11 @@ function openPopup(popup) {
 function closePopup(popup) {
   popup.classList.remove('popup_opened');
 }
+
+buttonCloseList.forEach(btn => {
+  const popup = btn.closest('.popup');
+  btn.addEventListener('click', () => closePopup(popup));
+})
 
 //cards
 function createElement(item) {
@@ -89,8 +92,7 @@ function closeProfileForm(evt) {
 }
 
 profilePopupEditButton.addEventListener('click', openProfileForm);
-profilePopupSubmitButton.addEventListener('click', closeProfileForm);
-profilePopupCloseButton.addEventListener('click', () => closePopup(profilePopup));
+profileForm.addEventListener('submit', closeProfileForm);
 
 //cardPopup
 function openAddWindow() {
@@ -116,8 +118,7 @@ function handleAddFormSubmit(evt) {
 }
 
 cardPopupButton.addEventListener('click', openAddWindow);
-cardPopupCloseButton.addEventListener('click', () => closePopup(cardPopup));
-cardPopupSubmitButton.addEventListener('click', handleAddFormSubmit);
+cardForm.addEventListener('submit', handleAddFormSubmit);
 
 
 //cardPopup
@@ -127,5 +128,3 @@ function openCardWindow(item) {
   imagePopupCardTitle.textContent = item.name;
   imagePopupCardImage.alt = item.alt;
 }
-
-imagePopupCardCloseButton.addEventListener('click', () => closePopup(imagePopup));
