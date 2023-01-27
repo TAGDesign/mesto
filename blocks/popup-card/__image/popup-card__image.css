@@ -1,8 +1,16 @@
 .popup-card__image {
   object-fit: cover;
-  max-height: 75vh;
+  width: 433px;
+  height: 540px;
   padding: 0;
   margin: 0;
   border: 0;
   background-color: #ffffff;
+}
+
+@media screen and (max-width: 1024px) {
+  .popup-card__image {
+    width: 240px;
+    height: 299px;
+    }
 }
