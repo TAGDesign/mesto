@@ -1,7 +1,7 @@
 .popup-card__container {
+  width: auto;
+  min-height: 78%;
   display: flex;
   flex-direction: column;
-  max-height: 75vh;
-  max-width: 75vw;
   background-color: transparent;
 }
